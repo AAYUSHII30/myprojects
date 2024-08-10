@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>My Details</title>
+    <style>
+        body{
+            background-image: url('form bg.jpg');
+            background-size: cover;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            padding: 100px 100px 100px 100px;
+        }
+        .hover{
+            color: white;
+        }
+        .hover:hover{
+            background-color: rgb(43, 44, 50);
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="100%" height="40px" style="background-color: black; color: white; border-color: white;">
+        <thead>
+        <tr>
+            <th><a href="index.html" class="hover"> Home</a></th>
+            <th><a href="contact.html" class="hover"> Contact </a></th>
+            <th><a href="gallery.html" class="hover"> Gallery </a></th>
+        </tr>
+        </thead>
+    </table>
+                    <h3>Fill the below form:</h3>
+                    <div class="form">
+                        <form>
+                            <table width="100%" height="300px">
+                                <div>
+                                <tr>
+                                    <div>
+                                    <td><label>NAME:</label></td>
+                                    <td><input type="text" placeholder="Enter your name"/></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td><label>EMAIL ID.:</label></td>
+                                    <td><input type="email" placeholder="Enter your email id."/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>PHONE NO.:</label></td>
+                                    <td><input type="number" placeholder="Contact number"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>DOB:</label></td>
+                                    <td><input type="date"/></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Select gender:</p></td>
+                                    <td>
+                                        <input type="radio" name="gender" value="male" id="1"/>
+                                        <label for="1">Male</label>
+                                        <input type="radio" name="gender" value="female" id="2"/>
+                                        <label for="2">Female</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Attach details:</label></td>
+                                    <td><input type="file"/></td>
+                                </tr>
+                                </div>
+                            </table>
+                            <div style="text-align: center;">
+                                <button>SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>              
+    </table>
+</body>
+</html>

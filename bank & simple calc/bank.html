@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+</head>
+<body>
+    <script>
+        let balance = 0;
+        while(true){
+            let choice = prompt(`Select option: 
+1) Available Balance
+2) Deposit Amount
+3) Withdraw Amount
+4) Stop`);
+        
+            switch(choice){
+                case "1":
+                    alert(`Available Balance: ${balance}`);
+                    break;
+                case "2":
+                    let deposit = prompt("Amount to be deposited: ");
+                    deposit = parseInt(deposit);
+                    if(isNaN(deposit)){
+                        alert("Enter a valid amount.");
+                    } else{
+                        balance += deposit;
+                        alert(`Amount deposited: ${deposit}`);
+                    }
+                    break;
+                case "3":
+                    let withdraw = prompt("Enter amount to withdraw: ");
+                    withdraw = parseInt(withdraw);
+                    if(isNaN(withdraw)){
+                        alert("Enter a valid amount.");
+                    } else if (withdraw > balance){
+                        alert("Insufficient balance.");
+                    } else {
+                        balance -= withdraw;
+                        alert(`Withdrawn amount: ${withdraw}`);
+                    }
+                    break;
+                case "4":
+                    window.location.href = 'index.html';
+                    break;
+                default:
+                    alert("Invalid choice.");
+            }
+            if (choice === "4") {
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

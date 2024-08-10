@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <a href="index.html">Home Page</a>
+    <br>
+    <a href="bank.html">Bank</a>
+    <script>
+        let no1 = prompt('Enter first number: ');
+        let no2 = prompt('Enter second number: ');
+        let operation = prompt('Select operation to be performed (+ - * /): ');
+        if (isNaN(no1) || isNaN(no2)) {            
+            alert("Please enter valid numbers");
+        } else {
+            no1 = parseInt(no1);
+            no2 = parseInt(no2);
+        }
+        let formula = `${no1} ${operation} ${no2}`;
+        let confirmation = confirm(`Formula is: ${formula}
+Do you want to proceed?`);
+        
+        if(confirmation){
+            let result;
+            switch (operation) {
+                case '+':
+                    result = no1 + no2;
+                    break;
+                case '-':
+                    result = no1 - no2;
+                    break;
+                case '*':
+                    result = no1 * no2;
+                    break;
+                case '/':
+                    result = no1 / no2;
+                    break;
+                default:
+                    alert("Invalid operation");
+                }
+                alert(`Result: ${result}`);
+            }else {
+                alert("Try again.");
+            }
+    </script>
+</body>
+</html>

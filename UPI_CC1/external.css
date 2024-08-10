@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    margin-top: 100px;
+    background-color: rgb(162, 162, 162);
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  */
+    align-items: center;
+}
+p{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 40px;
+}
+.upi, .credit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upi button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+.credit button{
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+button:hover {
+    background-color: rgb(51, 48, 48);
+}
+button{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 540px){
+    .upi button{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+}
+.credit button{
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+}
+}

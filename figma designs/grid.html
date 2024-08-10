@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        p{
+            color: #4B5563;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        .row1,.row2{
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            display: inline-block;
+            font-size: 25px;
+            color: #9CA3AF;
+            font-family: Arial, Helvetica, sans-serif;
+            vertical-align: top;
+            padding-top: 5px;
+        }
+        img{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+        }
+        .row1 div{
+            width: 404px;
+            height: 112px;
+            padding: 32px 0px 0px 0px;
+            background-color: #F9FAFB;
+            display: flex;
+            justify-content: center;
+        }
+        .row2 div{
+            width: 404px;
+            height: 112px;
+            padding: 0px;
+            background-color: #F9FAFB;
+            display: flex;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 599px){
+            p{
+                width: 344px;
+                height: 48px;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.05em;
+                text-align: center;
+            }
+            .text{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 30px;
+            }
+            .row1 div{
+                width: 171px;
+                height: 104px;
+                padding: 0px;
+            }
+            .row2 div{
+                width: 171px;
+                height: 104px;
+                padding: 0px;
+            }
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .row1{
+                display: flex;
+                flex-direction: column;
+            }
+            .row2{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="grid.html">ASSIGNMENT1</a>
+    <a href="banner.html">ASSIGNMENT2</a>
+    <a href="cardss.html">ASSIGNMENT3</a>
+    <div class="text">
+        <p>TRUSTED BY OVER 5 VERY AVERAGE SMALL BUSINESSES</p>
+    </div>
+    <div class="main">
+        <div class="row1">
+            <div class="column1">
+                <img src="transistor.png">
+                <span>Transistor</span>
+            </div>
+            <div class="column2">
+                <img src="mirage.png">
+                <span>Mirage</span>
+            </div>
+            <div class="column1">
+                <img src="statickit.png">
+                <span style="font-weight: bold;">StaticKit</span>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column1">
+                <img src="tuple.png">
+                <span style="font-weight: bold;">TUPLE</span>
+            </div>
+            <div class="column2">
+                <img src="laravel.png">
+                <span>Laravel</span>
+            </div>
+            <div class="column2">
+                <img src="statamic.png">
+                <span>statamic</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

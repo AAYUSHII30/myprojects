@@ -1,0 +1,15 @@
+body{
+    background-image: url('bg resumee1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hover{
+    color: white;
+}
+.hover:hover{
+    background-color: rgb(78, 93, 204);
+}
+.profile{
+    display:flex;
+    justify-content: flex-end;
+}

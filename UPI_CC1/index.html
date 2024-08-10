@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <script src="bank.js"></script>
+    <div class="main">
+        <p>UPI</p>
+        <div class="upi">
+            <button onclick="upi.balance()">Balance</button>
+            <button onclick="upi.deposit()">Deposit</button>
+            <button onclick="upi.withdraw()">Withdraw</button>  
+            <button onclick="upi.upi_transaction()">Transactions</button>
+        </div>
+        <p>Credit Card</p>
+        <div class="credit">
+            <button onclick="creditCard.check_limit()">Check Limit</button>
+            <button onclick="creditCard.pay_bill()">Pay Bill</button>
+            <button onclick="creditCard.buy()">Buy</button>
+            <button onclick="creditCard.cc_balance()">Balance</button>
+            <button onclick="creditCard.cc_transaction()">Transactions</button>
+        </div>
+    </div>
+</body>
+</html>

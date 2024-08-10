@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>My Gallery</title>
+    <style>
+        body{
+            background-image: url("gallery backgound.jpg");
+            background-size: cover; 
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            text-align: center;
+            padding: 10px 0 20px 0px;
+            font-size: 18px;
+        }
+        nav a{
+            background-color: rgb(11, 11, 70);
+            width: 100%;
+            color: white;
+            padding: 5px 100px 5px 100px;
+            border: 3px solid lightblue;
+        }
+        nav a:hover{
+            color: rgb(181, 40, 40);
+        }
+        @media only screen and (max-width: 699px){
+            .gallery{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="gallery.html" class="gallery">GALLERY</a>
+    </nav>
+<article>
+    <table border="0" width="33%">
+            <tr>
+                <td rowspan="2"><img src="img1.jpg" height="700" width="700" style="border-radius: 10%;"></td>
+                <td><img src="img9.jpg" height="350" width="350" style="border-radius: 10%;"></td>
+                <td><img src="img7.jpg" height="350" width="350" style="border-radius: 10%;"></td>
+            </tr>
+            <tr>   
+                <td><img src="img6.jpg" height="350" width="350" style="border-radius: 10%;"></td>
+                <td><img src="img5.png" height="350" width="350" style="border-radius: 10%;"></td>
+            </tr>
+    </table>
+    <table border="0" width="33%">
+            <tr>
+                <td rowspan="2"><img src="img3.jpg" height="350" style="border-radius: 10%;"></td>
+            </tr>
+            <tr>
+                <td><img src="img4.jpg" height="350" style="border-radius: 10%;"></td>
+                <td><img src="img11.jpg" height="350" width="450" style="border-radius: 10%;"></td>
+            </tr>
+    </table>
+    <table border="0" width="33%">
+            <tr>
+                <td rowspan="2"><img src="img2.jpg" height="350" style="border-radius: 10%;"></td>
+            </tr>
+            <tr>
+                <td><img src="img12.jpg" height="350" style="border-radius: 10%;"></td>
+            </tr>
+    </table>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o_kgdCGisso?si=Sj7zEJ2YyU9QqNxe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</article>
+</body>
+</html>

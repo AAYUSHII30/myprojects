@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block1">
+            <p>UPI</p>
+            <div class="block">
+                <span id="upi_balance">Balance: 0</span>
+            </div>
+            <br>
+            <div class="block2">
+                <button id="dep_bttn">Deposit</button>
+                <input placeholder="Enter amount" type="number" id="upi_deposit"/>
+                <br>
+                <button id="wit_bttn">Withdraw</button>
+                <input placeholder="Enter amount" type="number" id="upi_withdraw"/>
+            </div>
+            <div class="block">
+                <button id="upi_transaction">Transaction History</button>
+            </div>        
+        </div>
+        
+        <div class="block1">
+            <p>CREDIT CARD</p>
+            <div class="block">
+                <span id="limit">Card Limit: 10000</span>
+                <br>
+                <span id="cc_balance">Balance: 0</span>
+            </div>
+            <br>
+            <div class="block2">
+                <button id="buy_bttn">Buy</button>
+                <input placeholder="Enter amount" type="number" id="cc_buy"/>
+                <br>
+                <button id="pay_bttn">Pay Bill</button>
+                <input placeholder="Enter amount" type="number" id="cc_pay"/>
+            </div>
+            <div class="block">
+                <button id="cc_transaction">Transaction History</button>
+            </div>
+        </div>
+    </div> 
+    <script src="bank.js"></script>    
+</body>
+</html>

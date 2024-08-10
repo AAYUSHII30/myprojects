@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .white{
+            height: 80px;
+            width: 80px;
+            background-color: #cae9be;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .black{
+            height: 80px;
+            width: 80px;
+            background-color: #55883B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            height: 640px;
+            width: 640px;
+            border: 10px solid rgb(7, 56, 24);
+        }
+        .body{
+            display: flex;
+            justify-content: center;
+        }
+        @media only screen and (max-width:666px){
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 280px;
+                width: 280px;
+                border: 10px solid #052434 ;
+            }
+            .white{
+                height: 35px;
+                width: 35px;
+                background-color: #c0d6df;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .black{
+                height: 35px;
+                width: 35px;
+                background-color: #3d5a80;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+           .row{
+            display: flex;
+            flex-direction: row;
+            }
+            img{
+                height: 30px;
+                width: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; text-decoration: underline; margin-bottom: 2px;">Chess Board</h1>
+    <div class="body">
+        <div class="container">
+            <div class="row">
+                <div class="white"><img src="rook.png" height="70px" width="70px"></div>
+                <div class="black"><img src="knight.png" height="70px" width="70px"></div>
+                <div class="white"><img src="bishop (1).png" height="70px" width="70px"></div>
+                <div class="black"><img src="chess-piece (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="king.png" height="70px" width="70px"></div>
+                <div class="black"><img src="bishop (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="knight.png" height="70px" width="70px"></div>
+                <div class="black"><img src="rook.png" height="70px" width="70px"></div>
+            </div>
+            <div class="row">
+                <div class="black"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn.png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn.png" height="70px" width="70px"></div>
+            </div>
+            <div class="row">
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+            </div>
+            <div class="row">
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+            </div>
+            <div class="row">
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+            </div>
+            <div class="row">
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+                <div class="white"></div>
+            </div>
+            <div class="row">
+                <div class="white"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="pawn (1).png" height="70px" width="70px"></div>
+                <div class="black"><img src="pawn (1).png" height="70px" width="70px"></div>
+            </div>
+            <div class="row">
+                <div class="black"><img src="rook (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="knight (1).png" height="70px" width="70px"></div>
+                <div class="black"><img src="bishop (2).png" height="70px" width="70px"></div>
+                <div class="white"><img src="chess-piece.png" height="70px" width="70px"></div>
+                <div class="black"><img src="king (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="bishop (2).png" height="70px" width="70px"></div>
+                <div class="black"><img src="knight (1).png" height="70px" width="70px"></div>
+                <div class="white"><img src="rook (1).png" height="70px" width="70px"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
